@@ -4,12 +4,12 @@ import { AxiosError } from "axios";
 import { CreateUserRequestType } from "../models";
 
 type UseCreateUserType = {
-	mutationOptions?: MutationOptions<
-		any,
-		AxiosError,
-		CreateUserRequestType,
-		unknown
-	>;
+mutationOptions?: MutationOptions<
+	any,
+	AxiosError,
+	CreateUserRequestType,
+	unknown
+>;
 };
 
 export const useCreateUser = ({ mutationOptions }: UseCreateUserType) => {

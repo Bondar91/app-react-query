@@ -17,10 +17,7 @@ export const UsersList = () => {
     isError,
     error,
   } = useQuery<GetUsersResponse, AxiosError>(["users"], async () =>
-    getUsersService(), 
-    {
-      cacheTime: 500
-    }
+    getUsersService()
   );
   
 
